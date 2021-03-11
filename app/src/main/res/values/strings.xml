@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Book your Hoopfolio Podcast</string>
+
+    <string name="add_title">Add title</string>
+    <string name="add_date">Add date</string>
+    <string name="add_time">Add time</string>
+    <string name="add_name">Add name</string>
+    <string name="add_email">Add email</string>
+
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+    <string name="title_activity_create_profile">Profile</string>
+
+    <string name="empty_date_list_template">Tap + to add some dates and create your list</string>
+
+    <string name="fragment_main_header">View our Help Center, create a ticket or manage your existing tickets</string>
+    <string name="fragment_main_btn_knowledge_base">Knowledge base</string>
+    <string name="fragment_main_btn_contact_us">Contact us</string>
+    <string name="fragment_main_btn_my_tickets">My Fuego</string>
+    <string name="fragment_main_btn_chat">Start chat</string>
+    <string name="fragment_main_btn_answer_bot">Ask Answer Bot</string>
+    <string name="fragment_profile_invalid_email">Please provide an email address</string>
+
+    <string name="dialog_auth_title">Setup your profile</string>
+    <string name="dialog_auth_positive_btn">Do it now</string>
+    <string name="dialog_auth_negative_btn">Later</string>
+
+    <string name="push_error_device_not_compatible">Your device doesn\'t support push notifications</string>
+    <string name="push_notification_fallback_title">Someone replied to your ticket</string>
+</resources>

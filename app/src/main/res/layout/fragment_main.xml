@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".ui.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="24dp"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="start"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/secondaryTextColor"
+            android:text="@string/fragment_main_header" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/fragment_main_btn_knowledge_base"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/fragment_main_btn_knowledge_base"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/fragment_main_btn_contact_us"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/fragment_main_btn_contact_us"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/fragment_main_btn_my_tickets"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/fragment_main_btn_my_tickets"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/fragment_main_btn_chat"
+            style="@style/Widget.AppCompat.Button.Colored"
+
+            android:text="@string/fragment_main_btn_chat"/>
+
+    </LinearLayout>
+
+</ScrollView>

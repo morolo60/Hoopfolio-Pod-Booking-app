@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zendesk.rememberthedate">
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.CreateProfileActivity"
+            android:label="@string/title_activity_create_profile"
+            />
+
+        <activity android:name=".ui.EditDateActivity"
+            android:label="Date"
+            android:parentActivityName=".ui.MainActivity"/>
+
+        <activity
+            android:name=".ui.SetDateActivity"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".ui.SetTimeActivity"
+            android:theme="@style/AppTheme.Dialog" />
+
+        <receiver
+            android:name=".LocalNotification"
+            android:exported="false" />
+
+        <!-- Firebase services -->
+        <service
+            android:name=".push.ZendeskFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".push.ZendeskFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider android:authorities="${applicationId}.firebaseinitprovider"
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            tools:node="remove"/>
+
+    </application>
+
+</manifest>

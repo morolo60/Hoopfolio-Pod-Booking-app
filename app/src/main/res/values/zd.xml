@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zd_url">https://hoopfolio.zendesk.com</string>
+    <string name="zd_appid">a9fc2e43ce6a7b7b2ef6551c4c1ab89531c7edbce7ee9234</string>
+    <string name="zd_oauth">mobile_sdk_client_74e35550370eee1a567f</string>
+
+    <string name="zopim_account_id">289198311541317633</string>
+</resources>
